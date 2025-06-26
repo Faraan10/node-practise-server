@@ -1,6 +1,16 @@
 const fs = require("fs");
 
-fs.writeFile("file.txt", "Hello file 1", (err) => {
+// writing file 1
+// fs.writeFile("file.txt", "Hello file 1", (err) => {
+//   if (err) {
+//     console.log("File error", err);
+//   } else {
+//     console.log("File created");
+//   }
+// });
+
+// writing file 2
+fs.writeFile("file2.txt", "Hello file 2", (err) => {
   if (err) {
     console.log("File error", err);
   } else {
@@ -22,5 +32,13 @@ fs.readFile("file.txt", "utf-8", (err, data) => {
     console.log("File error", err);
   } else {
     console.log("File data:", data);
+  }
+});
+
+fs.unlink("file2.txt", (err) => {
+  if (err) {
+    console.log("File error", err);
+  } else {
+    console.log("File deleted");
   }
 });
