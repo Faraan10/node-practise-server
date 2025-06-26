@@ -1,13 +1,22 @@
 const fs = require("fs");
 
-fs.appendFile("file.txt", "Hello file 1", (err) => {
+fs.writeFile("file.txt", "Hello file 1", (err) => {
   if (err) {
     console.log("File error", err);
   } else {
     console.log("File created");
   }
 });
+// update file async
+fs.appendFile("file.txt", "\n updating file in the new line", (err) => {
+  if (err) {
+    console.log("File error", err);
+  } else {
+    console.log("File updated");
+  }
+});
 
+// read file async
 fs.readFile("file.txt", "utf-8", (err, data) => {
   if (err) {
     console.log("File error", err);
