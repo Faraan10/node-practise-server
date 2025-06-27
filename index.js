@@ -3,8 +3,10 @@ const app = express();
 const dotenv = require("dotenv").config();
 const cors = require("cors");
 const connection = require("./dbConnection");
+const cookieParser = require("cookie-parser");
 
 connection();
+app.use(cookieParser());
 app.use(cors());
 app.use(express.json());
 
