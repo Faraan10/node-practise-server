@@ -30,6 +30,7 @@ const register = async (req, res) => {
       password: hashPassword,
       number,
     });
+    console.log(createUser);
 
     const token = jwt.sign(
       { id: createUser._id, email: createUser.email },
