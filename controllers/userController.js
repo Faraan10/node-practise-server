@@ -70,7 +70,6 @@ const login = async (req, res) => {
       process.env.SECRET_KEY,
       { expiresIn: "1d" }
     );
-    console.log(token);
 
     res.status(200).json({
       id: exists._id,
