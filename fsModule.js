@@ -1,5 +1,4 @@
 const fs = require("fs");
-const http = require("http");
 
 // writing file 1
 // fs.writeFile("file.txt", "Hello file 1", (err) => {
