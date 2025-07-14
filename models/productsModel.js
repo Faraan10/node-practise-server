@@ -9,6 +9,7 @@ const productsModel = mongoose.Schema(
     quantity: { type: Number, default: 1 },
     stock: { type: Number, required: true },
     images: [{ type: String }],
+    isFeatured: { type: Boolean, default: false },
   },
   { timestamps: true }
 );
