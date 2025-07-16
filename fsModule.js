@@ -1,5 +1,6 @@
 const fs = require("fs");
 
+// these below are async operations
 // writing file 1
 // fs.writeFile("file.txt", "Hello file 1", (err) => {
 //   if (err) {
