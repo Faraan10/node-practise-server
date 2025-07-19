@@ -9,4 +9,9 @@ const getProducts = async (req, res) => {
   }
 };
 
-module.exports = getProducts;
+const postProduct = async (req, res) => {
+  try {
+  } catch (err) {}
+};
+
+module.exports = { getProducts, postProduct };
