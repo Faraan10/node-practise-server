@@ -11,7 +11,9 @@ app.use(cors());
 app.use(express.json());
 
 const userRoutes = require("./routes/userRoutes");
+const productRoutes = require("./routes/productRoutes");
 app.use("/api/users", userRoutes);
+app.use("/api", productRoutes);
 
 app.listen(process.env.PORT, () => {
   console.log("Listening on port", process.env.PORT);
