@@ -4,3 +4,5 @@ import { getProducts } from "../controllers/productsController";
 
 router.get("/products", getProducts);
 router.post("/products");
+
+module.exports = router;
