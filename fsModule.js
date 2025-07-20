@@ -4,6 +4,8 @@ const fs = require("fs");
 
 fs.writeFileSync("file2.txt");
 
+fs.readFileSync("file2.txt");
+
 // these below are async operations
 // writing file 1
 // fs.writeFile("file.txt", "Hello file 1", (err) => {
